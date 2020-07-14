@@ -1,0 +1,34 @@
+.CartColumn__header {
+  display: none;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(auto-fill, 120px);
+  grid-row-gap: .5em;
+  grid-column-gap: 1em;
+  justify-items: center;
+  align-items: center;
+  height: 75px;
+  margin-left: 170px;
+}
+
+.CartColumn__header-product,
+.CartColumn__header-price,
+.CartColumn__header-quantity,
+.CartColumn__header-remove,
+.CartColumn__header-subTotal {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: $gray-dark;
+  font-size: 1.2em;
+}
+
+.CartColumn__header-product {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+@media (min-width: 951px) {
+  .CartColumn__header {
+    display: grid;
+  }
+}

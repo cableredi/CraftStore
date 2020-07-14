@@ -1,0 +1,20 @@
+.ProductList {
+  animation: slideUp 300ms linear;
+  animation-delay: 150ms;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 16px;
+  max-width: 960px;
+  margin: 0 auto;
+  .Product {
+    min-height: 355px;
+    width: 90%;
+  }
+}
+
+@media (min-width: 451px) {
+  .ProductList {
+    margin-left: 170px;
+  }
+}

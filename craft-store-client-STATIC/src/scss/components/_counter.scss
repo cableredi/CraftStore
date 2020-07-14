@@ -1,0 +1,36 @@
+.Product__quantity-increment,
+.Product__quantity-decrement {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid $gray-eighty;
+  text-align: center;
+  border-radius: 50%;
+  color: inherit;
+  background: $white;
+  vertical-align: middle;
+
+  &:hover {
+    color: $primary-green;
+    border-color: $primary-green;
+    background: $white;
+  }
+  &:active {
+    color: $white;
+    border-color: $primary-green;
+    background: $white;
+  }
+}
+.Product__quantity-count {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  margin: 0 12px;
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px solid $gray-eighty;
+  &:focus {
+    outline: none;
+    border-color: $primary-green;
+  }
+}

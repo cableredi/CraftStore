@@ -1,0 +1,38 @@
+.CartTotals {
+  display: block;
+  justify-items: center;
+  align-items: center;
+  height: 75px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.CartTotals__total-header {
+  display: inline-block;
+}
+
+.CartTotals__total {
+  font-size: 0.8em;
+  &::before {
+    content: "$ ";
+  }
+  display: inline-block;
+}
+
+@media (min-width: 951px) {
+  .CartTotals {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(auto-fill, 120px);
+    grid-row-gap: 0.5em;
+    grid-column-gap: 1em;
+    margin-left: 170px;
+    margin-top: 0;
+  }
+
+  .CartTotals__total-header {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    justify-self: right;
+  }
+}

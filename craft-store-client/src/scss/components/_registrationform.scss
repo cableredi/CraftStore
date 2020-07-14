@@ -1,0 +1,33 @@
+.Registration {
+  margin: 20px;
+  border: 1px solid $gray-dark;
+  border-radius: 2px;
+  background: $white;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.Registration h2 {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.Registration__form .Form-items li label {
+  width: 150px;
+}
+
+@media (min-width: 451px) {
+  .Registration {
+    margin-left: 170px;
+    margin: 20px auto;
+  }
+
+  .Registration h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .Registration__form {
+    text-align: center;
+  }
+}

@@ -1,0 +1,43 @@
+.Landing {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: $gray-medium;
+}
+
+.Landing__product {
+  background: $white;
+  margin: 16px;
+  padding: 20px;
+  width: 300px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.Landing__product:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.Landing__product h2 {
+  color: $primary-green;
+  margin-bottom: 20px;
+}
+
+.Landing__product p {
+  font-size: 0.8em;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+@media (min-width: 451px) {
+  .Landing {
+    margin-left: 170px;
+  }
+}
+

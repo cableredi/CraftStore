@@ -1,0 +1,115 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 16px;
+  color: $gray-dark;
+  background: $gray-light-bg;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: $primary-green;
+  color: $white;
+}
+
+strong {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  height: 36px;
+  border-radius: 2px;
+  text-align: center;
+  color: $white;
+  background: $primary-green;
+  border: 0;
+  font-weight: 400;
+  padding: 0 16px;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  &:hover {
+    background: lighten($primary-green, 10%);
+  }
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    background: lighten($primary-green, 15%);
+  }
+}
+
+.sectionSpacer {
+  height: 130px;
+}
+
+.required,
+.error {
+  color: $red;
+  font-style: italic;
+  font-size: 0.9em;
+  margin: 5px 0 10px 0;
+}
+
+.Form-items li label {
+  font-weight: 600;
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.Form-items li {
+  margin: 10px 0;
+}
+
+.Form__button {
+  text-align: left;
+}
+
+.Form__button button {
+  margin-top: 15px;
+}
+
+@media (min-width: 451px) {
+  .sectionSpacer {
+    height: 80px;
+  }
+
+  .Form-items li label {
+    margin-right: 10px;
+    text-align: right;
+  }
+
+  .Form__button {
+    text-align: center;
+  }
+}

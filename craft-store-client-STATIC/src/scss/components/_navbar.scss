@@ -1,0 +1,104 @@
+.NavBar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $white;
+  padding: 0.5rem;
+  margin-bottom: 20px;
+  z-index: 500;
+}
+
+.NavBar__top {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+.NavBar__logo {
+  margin-left: 0.25rem;
+  max-width: 200px;
+  height: auto;
+  font-size: 1.1em;
+}
+
+.NavBar__logo a {
+  color: $primary-green;
+  text-decoration: none;
+  &:hover {
+    color: $primary-orange;
+  }
+}
+
+.spacer {
+  flex: 1; // takes all available space
+}
+
+.NavBar__cart {
+  color: $primary-green;
+  display: flex;
+  flex-direction: row;
+}
+
+.NavBar__cart-icon {
+  margin: 0 10px;
+  width: 25px;
+}
+
+.NavBar__search input {
+  height: 36px;
+  border: 1px solid $primary-green;
+  padding: 0 16px;
+  border-radius: 5px;
+  max-width: 140px;
+}
+
+.NavBar__cart-info {
+  display: none;
+}
+
+.NavBar__cart-icon img,
+.NavBar__search img {
+  filter: invert(0.5) sepia(1) saturate(50) hue-rotate(75deg);
+  &:hover {
+    filter: invert(0.5) sepia(1) saturate(50) hue-rotate(10deg);
+  }
+}
+
+.NavBar__search img {
+  width: 20px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.NavBar__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+@media (min-width: 541px) {
+  .NavBar__logo {
+    margin-left: 1rem;
+    font-size: 1.5em;
+  }
+
+  .NavBar__top {
+    padding: 0 1rem;
+  }
+
+  .NavBar__cart-info {
+    display: block;
+  }
+
+  .NavBar__cart-icon {
+    margin: 0 20px;
+    width: 40px;
+  }
+
+  .NavBar__search input {
+    max-width: 330px;
+  }
+}

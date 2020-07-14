@@ -1,0 +1,22 @@
+.ShippingAddress {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.ShippingAddress > div {
+  flex: 0 50%;
+}
+
+.ShippingAddress__selected div {
+  margin: 5px 0;
+}
+
+.ShippingAddress__header {
+  font-weight: 600;
+  color: $primary-green;
+}
+
+.ShippingAddress button {
+  margin-top: 20px;
+}
